@@ -1,26 +1,23 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-        "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-	<head>
-	    <title>Phone Gap Simulator</title>
-	    <META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
-	    <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
-		 <link rel="stylesheet" href="style.css">
-	    <script type="text/javascript" src="simulator.js"></script>
-	</head>
-	<body>
-		<div>
-			<select id="deviceSelector" class="fields" onchange="simulator.changeDevice()">
-			    <option value="phone" selected="selected">Phone</option>
-			    <option value="tablet">Tablet</option>
-			</select>
-			<button onclick="simulator.toggleOrientation()" class="fields">
-			    Change Orientation
-			</button>
-			<input type="text" class="fields"/>
-		</div>
-		<div id="simulator" class="device phone portrait">
-		    <iframe id="iframe" class="iframe phone portrait"  src="http://localhost:8001"></iframe>
-		</div>
-	</body>
+<head>
+    <title>webdevice</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="simulator.js"></script>
+</head>
+<body>
+<div id="control">
+    <select id="deviceSelector" class="fields" onchange="simulator.changeDevice()">
+        <option value="phone" selected="selected">Phone</option>
+        <option value="tablet">Tablet</option>
+    </select>
+    <button onclick="simulator.toggleOrientation()" class="fields">
+        Change Orientation
+    </button>
+    <input type="text" class="fields" value="url"/>
+</div>
+<div id="simulator" class="device phone portrait">
+    <iframe id="iframe" class="iframe phone portrait" src="http://localhost:8001"></iframe>
+</div>
+</body>
 </html>
