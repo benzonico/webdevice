@@ -21,3 +21,9 @@ simulator.setClassesNames = function () {
     simu.className = 'device ' + className;
     iframe.className = 'iframe ' + className;
 }
+
+simulator.loadUrl=function(){
+    var url = document.getElementById('url').value;
+    document.getElementById('iframe').src = url;
+
+}

@@ -1,23 +1,32 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-    <title>webdevice</title>
+    <title>Web Device</title>
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="simulator.js"></script>
 </head>
 <body>
-<div id="control">
-    <select id="deviceSelector" class="fields" onchange="simulator.changeDevice()">
-        <option value="phone" selected="selected">Phone</option>
-        <option value="tablet">Tablet</option>
-    </select>
-    <button onclick="simulator.toggleOrientation()" class="fields">
-        Change Orientation
-    </button>
-    <input type="text" class="fields" value="url"/>
-</div>
+<h2>Web Device</h2>
+<fieldset id="control">
+    <legend>Control</legend>
+    <div class="controlContainer">
+        <select id="deviceSelector" class="fields" onchange="simulator.changeDevice()">
+            <option value="phone" selected="selected">Phone</option>
+            <option value="tablet">Tablet</option>
+        </select>
+        <button onclick="simulator.toggleOrientation()" class="fields">
+            Orientation
+        </button>
+    </div>
+    <div class="controlContainer">
+        <input type="text"  id="url" value="http://gongfu.io"/>
+        <button onclick="simulator.loadUrl()" class="fields" style="width:50px">
+            go !
+        </button>
+    </div>
+</fieldset>
 <div id="simulator" class="device phone portrait">
-    <iframe id="iframe" class="iframe phone portrait" src="http://localhost:8001"></iframe>
+    <iframe id="iframe" name="iframe" class="iframe phone portrait" src="http://genevajug.ch"></iframe>
 </div>
 </body>
 </html>

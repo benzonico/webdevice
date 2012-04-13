@@ -1,6 +1,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #2b2b2b;
+    background-color: #FFFFFF;
+    background-color: #bbbbbb;
     background-image: -webkit-linear-gradient(white 2px, transparent 2px), -webkit-linear-gradient(0, white 2px, transparent 2px), -webkit-linear-gradient(rgba(255, 255, 255, .3) 1px, transparent 1px), -webkit-linear-gradient(0, rgba(255, 255, 255, .3) 1px, transparent 1px);
     background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
     background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
@@ -35,8 +36,8 @@ body {
 }
 
 #simulator{
-    position:relative;
-    left:320px;
+    position:absolute;
+    left:390px;
     top:10px;
 }
 
@@ -44,7 +45,7 @@ body {
     position: fixed;
     left: 10;
     top: 10%;
-    width: 280px;
+    width: 350px;
 }
 
 .iframe {
@@ -73,7 +74,7 @@ body {
 
 .fields {
     height: 34px;
-    width: 210px;
+    width: 160px;
     padding: 5px;
     font-size: 16px;
     color: #123d54;
@@ -88,6 +89,29 @@ body {
     -webkit-box-shadow: 0px 1px 3px rgba(000, 000, 000, 0.5), inset 0px 0px 1px rgba(255, 255, 255, 1);
     text-shadow: 0px -1px 0px rgba(000, 000, 000, 0.7), 0px 1px 0px rgba(255, 255, 255, 0.3);
 }
+fieldset{
+        background-color: #bbbbbb
+}
+legend{
+    color: white;
+}
 input{
-    padding:0px;
+
+}
+.controlContainer{
+    padding: 10px;
+}
+#url{
+    width:255px;
+    height: 34;
+    padding: 7px;
+    font-size: 16px;
+    color: #123d54;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border: 1px solid #003366;
+    -moz-box-shadow: 0px 1px 3px rgba(000, 000, 000, 0.5), inset 0px 0px 1px rgba(255, 255, 255, 1);
+    -webkit-box-shadow: 0px 1px 3px rgba(000, 000, 000, 0.5), inset 0px 0px 1px rgba(255, 255, 255, 1);
+    text-shadow: 0px -1px 0px rgba(000, 000, 000, 0.7), 0px 1px 0px rgba(255, 255, 255, 0.3);
 }
