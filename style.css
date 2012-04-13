@@ -6,9 +6,6 @@ body {
     background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
     background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
 }
-h2{
-    /*color:white;*/
-}
 .device.phone.landscape {
     padding: 22px 79px;
     width: 637px;
@@ -93,9 +90,6 @@ h2{
 }
 fieldset{
         background-color: #bbbbbb
-}
-legend{
-    /*color: white;*/
 }
 input{
 
