@@ -1,11 +1,32 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #FFFFFF;
-    background-color: #bbbbbb;
+    padding: 0;
+    margin: 0;
+    background-color: #cccccc;
     background-image: -webkit-linear-gradient(white 2px, transparent 2px), -webkit-linear-gradient(0, white 2px, transparent 2px), -webkit-linear-gradient(rgba(255, 255, 255, .3) 1px, transparent 1px), -webkit-linear-gradient(0, rgba(255, 255, 255, .3) 1px, transparent 1px);
     background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
     background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
 }
+#simulator{
+    position:absolute;
+    left:405px;
+    top:10px;
+}
+
+#control{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    width: 350px;
+    height: 600px;
+    text-align: center;
+    background-color: #bbbbbb;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+
+}
+
 .device.phone.landscape {
     padding: 22px 79px;
     width: 637px;
@@ -22,29 +43,16 @@ body {
 
 .device.tablet.landscape {
     padding: 83px 87px;
-    width: 1014px;
-    height: 896px;
+    width: 730px;
+    height: 600px;
     background: url(./image/tablet-l.png) no-repeat;
 }
 
 .device.tablet.portrait {
     padding: 87px 80px;
-    width: 1014px;
-    height: 896px;
+    width: 600px;
+    height: 730px;
     background: url(./image/tablet-p.png) no-repeat;
-}
-
-#simulator{
-    position:absolute;
-    left:390px;
-    top:10px;
-}
-
-#control{
-    position: fixed;
-    left: 10;
-    top: 10%;
-    width: 350px;
 }
 
 .iframe {
@@ -87,12 +95,6 @@ body {
     -moz-box-shadow: 0px 1px 3px rgba(000, 000, 000, 0.5), inset 0px 0px 1px rgba(255, 255, 255, 1);
     -webkit-box-shadow: 0px 1px 3px rgba(000, 000, 000, 0.5), inset 0px 0px 1px rgba(255, 255, 255, 1);
     text-shadow: 0px -1px 0px rgba(000, 000, 000, 0.7), 0px 1px 0px rgba(255, 255, 255, 0.3);
-}
-fieldset{
-        background-color: #bbbbbb
-}
-input{
-
 }
 .controlContainer{
     padding: 10px;
